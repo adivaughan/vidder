@@ -1,0 +1,317 @@
+
+:root {
+--main: #38474f;
+--secondary: #b8b295;
+--white: #ffffff;
+--standard-font: clamp(0.8rem, 2.5vw, 1.5rem); 
+--h1: clamp(1rem, 8vw, 5rem); 
+--h2: clamp(1rem, 3.5vw, 3.5rem)
+}
+
+body, html{
+    font-family: Montserrat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0 10%;
+}
+
+.flex {
+    display: flex;
+}
+
+/* header section */
+header {
+    background-color: var(--main);
+    color: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-company-logo {
+    height: 150px
+}
+
+header span {
+    padding: 30px;
+    font-size: 26px;
+    align-self: center;
+    text-align: right;
+}
+
+.header-telephone {
+    background-color: var(--secondary);
+    color: #ffffff;
+}
+
+/* hero section */
+.hero-text h1 {
+    font-size: var(--h1); 
+}
+
+.hero-text p {
+    font-size: clamp(1rem, 3.5vw, 3.5rem); 
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("assets/work/vidder-van.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: clamp(300px, 100vw, 85vh); 
+}
+
+.hero-text {
+    color: var(--white);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+/* text and mailto buttion */
+
+a {
+    background-color: var(--main);
+    color: var(--secondary);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: var(--h2); 
+}
+
+.contact-us {
+    padding-top: 20px;
+}
+
+/* images section  */
+
+.images-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    max-width: 1400px;
+}
+
+#work-images {
+    background-color: var(--secondary);
+}
+
+
+#text-content {
+    margin: 40px 0;
+    text-align: center;
+    font-size: clamp(0.1rem, 5vw, 1.5rem);
+}
+
+#area-covered,
+#work-images {
+    margin: 5px 0;
+}
+
+#business-text {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.business-text-font {
+    font-size: clamp(0.1rem, 5vw, 1.5rem);
+}
+
+/* area section */
+
+#area-covered {
+    justify-content: center;
+    display: flex;
+}
+.map-image {
+    width: 70%;
+}
+
+@media screen and (max-width: 790px) {
+    .map-image {
+        width: 95%;
+    }
+}
+
+/* service and prices */
+
+#services-prices {
+    background-color: var(--main);
+    color: var(--secondary);
+    padding: 22px 0px 40px;
+}
+
+.services-h2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+}
+
+@media screen and (max-width: 790px) {
+    .services-h2 {
+        font-size: var(--h1);
+    }
+}
+
+table {
+    word-wrap: break-word;
+}
+
+.prices-tables {
+    font-size: 18px;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.prices h3 {
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 3px 6px;
+}
+
+th {
+    padding-bottom: 16px;
+}
+
+td {
+    padding: 4px 16px;
+}
+
+@media screen and (max-width: 1322px) {
+    .prices-tables {
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+    .prices-tables {
+        font-size: 10px;
+    }
+}
+
+@media (min-device-width:320px) and (max-device-width:768px) {
+    .prices-tables {
+        flex-direction: column;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .prices-tables {
+        font-size: 18px;
+    }
+    .header-company-logo {
+        height: 75px;
+    }
+    td {
+        padding: 2px 3px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .prices-tables {
+        font-size: 13px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    .prices-tables {
+        font-size: 11px;
+    }
+}
+
+.center-tables {
+    justify-content: center;
+    display: flex;
+}
+
+/* area covered */
+#area-covered {
+    padding: 40px 0;
+}
+
+.work-image {
+    max-height: clamp(5rem, 100vw, 20rem);
+    padding: 5px;
+    opacity: 0;
+    -webkit-transition: all 2s ease; 
+    -moz-transition: all 2s ease; 
+    -ms-transition: all 2s ease; 
+    -o-transition: all 2s ease; 
+}
+
+@media screen and (max-width: 745px) {
+    .work-image {
+    max-height: clamp(3rem, 40vw, 20rem);
+}
+
+}
+
+/* footer */
+
+footer {
+    background-color: var(--main);
+    color: var(--secondary);
+    padding: 30px 0;
+}
+
+
+.footer-items {
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+    .footer-items {
+        flex-direction: column-reverse;
+    }
+}
+
+footer h2 {
+    text-align: right;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    padding: 5px 0;
+    margin: 0;
+}
+
+address a {
+    color: var(--secondary);
+    font-style: normal;
+    text-decoration: none;
+    font-size: var(--standard-font); 
+    padding: 5px;
+}
+
+address {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.company-info {
+    font-size: var(--standard-font);
+    text-align: right;
+}
+
+.footer-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-image {
+    height: clamp(1px, 10vw, 5rem);
+    padding: 5px;
+}
