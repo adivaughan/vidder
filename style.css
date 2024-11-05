@@ -124,6 +124,20 @@ a {
     font-size: clamp(0.1rem, 5vw, 1.5rem);
 }
 
+/* YouTube iframe */
+
+.video {
+    width: 720px;
+    height: 576px;
+}
+
+@media screen and (max-width: 790px) {
+    .video {
+        width: 95%;
+        height: 288px;
+    }
+}
+
 /* area section */
 
 #area-covered {
@@ -254,9 +268,8 @@ td {
 
 @media screen and (max-width: 745px) {
     .work-image {
-    max-height: clamp(3rem, 40vw, 20rem);
-}
-
+        max-height: clamp(3rem, 40vw, 20rem);
+    }
 }
 
 /* footer */
