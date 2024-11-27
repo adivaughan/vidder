@@ -3,7 +3,9 @@
 --main: #38474f;
 --secondary: #b8b295;
 --white: #ffffff;
---standard-font: clamp(0.8rem, 2.5vw, 1.5rem); 
+--standard-font: clamp(0.8rem, 2.5vw, 1.5rem);
+--busness-font: clamp(0.1rem, 5vw, 1.5rem);
+--footer-font: clamp(0.8rem, 2.5vw, 1.2rem);
 --h1: clamp(1rem, 8vw, 5rem); 
 --h2: clamp(1rem, 3.5vw, 3.5rem)
 }
@@ -13,6 +15,10 @@ body, html{
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+p {
+    font-size: var(--standard-font);
 }
 
 .container {
@@ -33,6 +39,10 @@ header {
 
 .header-company-logo {
     height: 150px
+}
+
+.header-logo-link {
+    padding: 0;
 }
 
 header span {
@@ -75,6 +85,19 @@ header span {
     width: 100%;
 }
 
+.strapline {
+    padding: 0 40px;
+}
+
+.h3-header {
+    font-size: var(--busness-font);
+    margin-bottom: 0;
+}
+
+.h3-p {
+    margin: 0;
+}
+
 /* text and mailto buttion */
 
 a {
@@ -86,7 +109,15 @@ a {
 }
 
 .contact-us {
-    padding-top: 20px;
+    padding-top: 30px;
+}
+
+.policy-text {
+    background-color: #fff;
+    color: var(--main);
+    text-decoration: none;
+    padding: 0;
+    font-size: var(--standard-font);
 }
 
 /* images section  */
@@ -107,7 +138,11 @@ a {
 #text-content {
     margin: 40px 0;
     text-align: center;
-    font-size: clamp(0.1rem, 5vw, 1.5rem);
+
+}
+
+#text-content p {
+    font-size: var(--busness-font);
 }
 
 #area-covered,
@@ -121,7 +156,7 @@ a {
 }
 
 .business-text-font {
-    font-size: clamp(0.1rem, 5vw, 1.5rem);
+    font-size: var(--busness-font);
 }
 
 /* YouTube iframe */
@@ -199,6 +234,11 @@ th {
 
 td {
     padding: 4px 16px;
+}
+
+#policy-text section p,
+#policy-text section a {
+    font-size: var(--footer-font);
 }
 
 @media screen and (max-width: 1322px) {
@@ -297,6 +337,32 @@ footer h2 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     padding: 5px 0;
     margin: 0;
+}
+
+footer address {
+    font-size: var(--footer-font);
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-nav ul {
+    display: flex;
+}
+
+.footer-nav li {
+    list-style-type: none;
+}
+
+.footer-nav ul > *:first-child {
+    padding-right: 10px;
+}
+
+.footer-nav ul li a {
+    padding: 0;
+    font-size: var(--footer-font);
 }
 
 address a {
