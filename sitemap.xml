@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+    <page>
+        <title>Vidder - Home</title>
+        <url><index class="html"></index></url>
+        <content>
+            <heading>Welcome to Vidder External Cleaning Specialists</heading>
+            <paragraph>Discover our range of professional external cleaning services</paragraph>
+        </content>
+    </page>
+    <page>
+        <title>Privacy Policy</title>
+        <url>/privacy-policy.html</url>
+        <content>
+            <heading>Privacy Policy</heading>
+            <paragraph>Learn how we handle your data responsibly.</paragraph>
+        </content>
+    </page>
+    <page>
+        <title>Cookies Policy</title>
+        <url>/cookies-policy.html</url>
+        <content>
+            <heading>Cookies Policy</heading>
+            <paragraph>Understand how we use cookies on our site.</paragraph>
+        </content>
+    </page>
+</website>
