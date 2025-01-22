@@ -1,0 +1,12 @@
+# robots.txt file for vidder.co.uk
+
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /admin/
+
+# Allow everything else
+Allow: /
+
+# Sitemap
+Sitemap: https://vidder.co.uk/sitemap.xml
